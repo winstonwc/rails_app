@@ -78,4 +78,9 @@ RailsApp::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
   config.secret_key_base = "Baby"
+
+  #Force all access to the app over SSL, use
+  # Strict-Transport-Security, and use secure cookies.
+  config.force_ssl = true
+  
 end
